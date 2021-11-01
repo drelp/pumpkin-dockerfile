@@ -1,6 +1,7 @@
-```
+```shell
 sudo docker build .
 
+docker build -t pumpkin-notebook:1.0 -f ./Dockerfile .
 docker build --no-cache -t pumpkin-notebook:1.0 -f ./Dockerfile .
 ```
 
