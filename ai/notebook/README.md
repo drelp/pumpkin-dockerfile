@@ -1,4 +1,8 @@
 ```
+sudo docker build .
+```
+
+```
 允许 jupyter 监听所有端口
 
 --ip=0.0.0.0
