@@ -19,6 +19,10 @@ sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-gatk-notebook:1
 mkdir -p /home/gene/web/gene-bg/webroot
 cp pumpkin-gatk-notebook.zip /home/gene/web/gene-bg/webroot
 
+sudo docker pull registry.docker-cn.com/broadinstitute/gatk:latest
+sudo docker pull registry.docker-cn.com/library/python:2.7
+sudo docker pull registry.docker-cn.com/broadinstitute/genomes-in-the-cloud:2.3.1-1512499786
+
 sudo docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 sudo docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
 ```
