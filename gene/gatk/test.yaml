@@ -1,0 +1,43 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: '2021-11-02T08:41:07Z'
+  managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:ports':
+            .: {}
+            'k:{"port":8888,"protocol":"TCP"}':
+              .: {}
+              'f:port': {}
+              'f:protocol': {}
+              'f:targetPort': {}
+          'f:selector':
+            .: {}
+            'f:volcano.sh/job-name': {}
+            'f:volcano.sh/task-spec': {}
+          'f:sessionAffinity': {}
+          'f:type': {}
+      manager: base-server
+      operation: Update
+      time: '2021-11-02T08:41:07Z'
+  name: o1fdd47dbd1b453280090a48e425536b
+  namespace: d37c68f328b94e8da56bde693916a55e
+  resourceVersion: '1626805'
+  selfLink: >-
+    /api/v1/namespaces/d37c68f328b94e8da56bde693916a55e/services/o1fdd47dbd1b453280090a48e425536b
+  uid: ae6195f7-f96b-4a6a-bb35-d542ca7d8fe9
+spec:
+  clusterIP: 172.20.1.54
+  ports:
+    - port: 8888
+      protocol: TCP
+      targetPort: 8888
+  selector:
+    volcano.sh/job-name: o1fdd47dbd1b453280090a48e425536b
+    volcano.sh/task-spec: task0
+  sessionAffinity: None
+  type: ClusterIP

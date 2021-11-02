@@ -1,0 +1,39 @@
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  creationTimestamp: '2021-11-02T08:41:07Z'
+  generation: 1
+  managedFields:
+    - apiVersion: extensions/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:rules': {}
+      manager: base-server
+      operation: Update
+      time: '2021-11-02T08:41:07Z'
+    - apiVersion: networking.k8s.io/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          'f:loadBalancer':
+            'f:ingress': {}
+      manager: nginx-ingress-controller
+      operation: Update
+      time: '2021-11-02T08:41:41Z'
+  name: o1fdd47dbd1b453280090a48e425536b
+  namespace: d37c68f328b94e8da56bde693916a55e
+  resourceVersion: '1626987'
+  selfLink: >-
+    /apis/networking.k8s.io/v1beta1/namespaces/d37c68f328b94e8da56bde693916a55e/ingresses/o1fdd47dbd1b453280090a48e425536b
+  uid: 86346574-931b-4113-a93b-c08521088dc1
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: o1fdd47dbd1b453280090a48e425536b
+              servicePort: 8888
+            path: /notebook_p18fe9f2f6944ca9a2ece4d283f7c21a
+            pathType: ImplementationSpecific
