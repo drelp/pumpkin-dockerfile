@@ -22,3 +22,7 @@ cp pumpkin-gatk-notebook.zip /home/gene/web/gene-bg/webroot
 sudo docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 sudo docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
 ```
+
+```
+https://www.zxzyl.com/archives/869
+```
