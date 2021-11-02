@@ -10,6 +10,7 @@ cp pumpkin-notebook.zip /home/gene/web/gene-bg/webroot
 
 docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
+
 ```
 
 ```
