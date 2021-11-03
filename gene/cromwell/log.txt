@@ -1,0 +1,30 @@
+java -jar cromwell-70.jar server
+2021-11-03 10:59:13,271  INFO  - Running with database db.url = jdbc:hsqldb:mem:50e0aeb1-43ca-4895-8047-14297c165a15;shutdown=false;hsqldb.tx=mvcc
+Skipping auto-registration
+2021-11-03 10:59:15,975  WARN  - Skipping auto-registration
+2021-11-03 10:59:19,829  INFO  - Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
+2021-11-03 10:59:19,843  INFO  - [RenameWorkflowOptionsInMetadata] 100%
+2021-11-03 10:59:21,016  INFO  - Running with database db.url = jdbc:hsqldb:mem:e88b28e7-e2ad-4e36-be08-7bf659a562df;shutdown=false;hsqldb.tx=mvcc
+Skipping auto-registration
+2021-11-03 10:59:21,261  WARN  - Skipping auto-registration
+2021-11-03 10:59:22,140  INFO  - Slf4jLogger started
+2021-11-03 10:59:22,545 cromwell-system-akka.dispatchers.engine-dispatcher-5 INFO  - Workflow heartbeat configuration:
+{
+  "cromwellId" : "cromid-915e167",
+  "heartbeatInterval" : "2 minutes",
+  "ttl" : "10 minutes",
+  "failureShutdownDuration" : "5 minutes",
+  "writeBatchSize" : 10000,
+  "writeThreshold" : 10000
+}
+2021-11-03 10:59:22,615 cromwell-system-akka.dispatchers.service-dispatcher-8 INFO  - Metadata summary refreshing every 1 second.
+2021-11-03 10:59:22,617 cromwell-system-akka.dispatchers.service-dispatcher-8 INFO  - No metadata archiver defined in config
+2021-11-03 10:59:22,617 cromwell-system-akka.dispatchers.service-dispatcher-8 INFO  - No metadata deleter defined in config
+2021-11-03 10:59:22,639 cromwell-system-akka.dispatchers.service-dispatcher-7 INFO  - WriteMetadataActor configured to flush with batch size 200 and process
+rate 5 seconds.
+2021-11-03 10:59:22,639 cromwell-system-akka.actor.default-dispatcher-2 INFO  - KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
+2021-11-03 10:59:22,660 cromwell-system-akka.dispatchers.engine-dispatcher-30 INFO  - JobStoreWriterActor configured to flush with batch size 1000 and process rate 1 second.
+2021-11-03 10:59:22,674 cromwell-system-akka.dispatchers.engine-dispatcher-31 INFO  - CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
+2021-11-03 10:59:22,789 cromwell-system-akka.dispatchers.engine-dispatcher-45 INFO  - JobExecutionTokenDispenser - Distribution rate: 20 per 10 seconds.
+2021-11-03 10:59:23,677 cromwell-system-akka.dispatchers.engine-dispatcher-5 INFO  - Cromwell 70 service started on 0:0:0:0:0:0:0:0:8000...
+2021-11-03 10:59:27,799 cromwell-system-akka.dispatchers.engine-dispatcher-12 INFO  - Not triggering log of token queue status. Effective log interval = None
