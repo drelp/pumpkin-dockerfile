@@ -10,11 +10,28 @@ sudo /usr/sbin/alternatives --config java
 /usr/sbin/alternatives --install /usr/bin/java java /usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.el7_9.x86_64/bin/java 2
 
 java -jar cromwell-70.jar server
-https://bp.aliyun.com/detail/67
+
 ```
 
 ```
 http://10.50.10.20:8000/
+
+https://bp.aliyun.com/detail/67
+
+https://github.com/chanzuckerberg/miniwdl
+https://cloud.tencent.com/developer/article/1373704
+
+ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome
+
+ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/NIST7035_TAAGGCGA_L001_R1_001.fastq.gz
+ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/NIST7035_TAAGGCGA_L001_R2_001.fastq.gz
+```
+
+```
+gatk docker
+cromwell 可视化
+
+http://jackywu.site/technology/%E6%9E%84%E5%BB%BA%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E4%BA%91%E5%B9%B3%E5%8F%B0/
 ```
 
 ```
