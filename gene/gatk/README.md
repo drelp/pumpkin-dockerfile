@@ -32,4 +32,7 @@ https://www.zxzyl.com/archives/869
 https://github.com/gatk-workflows/gatk4-data-processing
 https://gatk.broadinstitute.org/hc/en-us/articles/360035535912
 https://github.com/deeplearning2012/cromwell
+
+https://github.com/broadinstitute/cromwell/releases/download/70/cromwell-70.jar
+https://github.com/broadinstitute/cromwell/releases/download/70/womtool-70.jar
 ```
