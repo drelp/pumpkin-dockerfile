@@ -16,6 +16,7 @@ wget ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/NA12878/Garvan_NA12878_HG001
 
 http://download.virtualbox.org/virtualbox/6.1.28/VirtualBox-6.1.28-147628-OSX.dmg
 
+wget https://shengpeng-shanghai.oss-cn-shanghai.aliyuncs.com/cromwell_release/20190611/cromwell-42-3cb2405-SNAP.jar
 ```
 
 ```

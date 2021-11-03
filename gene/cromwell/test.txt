@@ -1,0 +1,128 @@
+企业上云实践
+BCS+Cromwell基因解决方案
+|
+部署Cromwell
+文档版本：20200119
+32
+mkdir -p /home/cromwell/cromwell
+cd /home/cromwell/cromwell/
+步骤4
+下载Cromwell。
+wget
+https://shengpeng-shanghai.oss-cn-
+shanghai.aliyuncs.com/cromwell_release/20190611/cromwell-42-3cb2405-SNAP.jar
+步骤5
+创建并编辑Cromwell配置模版（bcs_sample.conf）。
+vi bcs_sample.conf
+步骤6
+在配置模板（bcs_sample.conf）中填入以下内容。
+注意：请更新以下脚本中的下述参数。建议您使用随本手册附带的示例代码完成内容
+编辑。
+需要更新的参数
+更新后的参数值
+access-id和access-key（共四处）
+RAM用户（gen_test）的AccessKeyId
+和AccessKeySecret，详见1章节保存
+的CSV文件
+url（第七行）中的<rds address>
+RDS实例的内网访问地址，详见2.5章
+节步骤10
+user（第九行）和password（第十行）
+数据库账号的名称和密码，详见2.5章节
+步骤11-[2]
+root（第88行）中的<bucket name>
+OSS
+Bucket名称，详见2.6章节步骤3
+include required(classpath("application"))
+database {
+profile = "slick.jdbc.MySQLProfile$"
+db {
+driver = "com.mysql.cj.jdbc.Driver"
+url = "jdbc:mysql://<rds
+address>/db_cromwell?rewriteBatchedStatements=true&useSSL=false&allowPublicKeyRetriev
+al=true"
+# MySQL username and password
+user = "user_cromwell"
+password = "HEllo1234"
+connectionTimeout = 5000
+}
+}
+workflow-options {
+workflow-log-dir = "/home/cromwell/cromwell/logs/"
+企业上云实践
+BCS+Cromwell基因解决方案
+|
+部署Cromwell
+
+文档版本：20200119
+33
+
+}
+
+call-caching {
+
+# Allows re-use of existing results for jobs you've already run
+
+# (default: false)
+
+enabled = true
+
+# Whether to invalidate a cache result forever if we cannot reuse them. Disable this if you
+expect some cache copies
+
+# to fail for external reasons which should not invalidate the cache (e.g. auth differences
+between users):
+
+# (default: true)
+
+invalidate-bad-cache-results = true
+
+# blacklist-cache {
+
+#   # The call caching blacklist cache is off by default. This cache is used to blacklist cache
+hit paths based on the
+
+#   # prefixes of cache hit paths that Cromwell has previously failed to copy for permissions
+reasons.
+
+#   enabled: true
+
+#   # Guava cache concurrency.
+
+#   concurrency: 10000
+
+#   # How long entries in the cache should live from the time of their last access.
+
+#   ttl: 20 minutes
+
+#   # Maximum number of entries in the cache.
+
+#   size: 1000
+
+# }
+}
+
+docker {
+
+hash-lookup {
+
+enable = true
+
+# Set this to match your available quota against the Google Container Engine API
+
+#gcr-api-queries-per-100-seconds
+= 1000
+
+# Time in minutes before an entry expires from the docker hashes cache and needs to be
+fetched again
+
+#cache-entry-ttl = "20 minutes"
+
+# Maximum number of elements to be kept in the cache. If the limit is reached, old elements
+will be removed from the cache
+
+#cache-size = 200
+
+# How should docker hashes be looked up. Possible values are "local" and "remote"
+
+# "local": Lookup hashes on the local docker daemon using the cli
