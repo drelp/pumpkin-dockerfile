@@ -36,6 +36,7 @@ https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-w
 https://app.terra.bio/#library/showcase
 https://app.terra.bio/#workspaces/tidal-waves/Peat-Demo
 https://gatk.broadinstitute.org/hc/en-us/articles/360035889771-Pipelining-GATK-with-WDL-and-Cromwell
+https://gatk.broadinstitute.org/hc/en-us/articles/360035535912
 ```
 
 ```
