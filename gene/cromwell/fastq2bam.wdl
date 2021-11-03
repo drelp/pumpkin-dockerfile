@@ -109,39 +109,40 @@ task DoFastq2Ubam {
         Array[File] bam_file = glob("${local_output}/*.bam")
     }
 }
+
 # WORKFLOW DEFINITION
 workflow Fastq2Ubam {
-File fastq1
-File fastq2
-String out_prefix
-Int split_to_n_files
-String sample_name
-String library_name
-String platform_unit
-String platform
-String sequencing_center
-String read_group_name
-String cluster_config
-Int data_disk_size
-Int mem_gb
-call DoFastq2Ubam {
-input:
-fastq1=fastq1,
-fastq2=fastq2,
-out_prefix=out_prefix,
-split_to_n_files=split_to_n_files,
-sample_name=sample_name,
-library_name=library_name,
-platform=platform,
-platform_unit=platform_unit,
-sequencing_center=sequencing_center,
-read_group_name=read_group_name,
-cluster_config=cluster_config,
-data_disk_size=data_disk_size,
-mem_gb=mem_gb
-}
-# Outputs that will be retained when execution is complete
-output {
-Array[File] bam_file = DoFastq2Ubam.bam_file
-}
+    File fastq1
+    File fastq2
+    String out_prefix
+    Int split_to_n_files
+    String sample_name
+    String library_name
+    String platform_unit
+    String platform
+    String sequencing_center
+    String read_group_name
+    String cluster_config
+    Int data_disk_size
+    Int mem_gb
+    call DoFastq2Ubam {
+        input:
+        fastq1=fastq1,
+        fastq2=fastq2,
+        out_prefix=out_prefix,
+        split_to_n_files=split_to_n_files,
+        sample_name=sample_name,
+        library_name=library_name,
+        platform=platform,
+        platform_unit=platform_unit,
+        sequencing_center=sequencing_center,
+        read_group_name=read_group_name,
+        cluster_config=cluster_config,
+        data_disk_size=data_disk_size,
+        mem_gb=mem_gb
+    }
+    # Outputs that will be retained when execution is complete
+    output {
+        Array[File] bam_file = DoFastq2Ubam.bam_file
+    }
 }
