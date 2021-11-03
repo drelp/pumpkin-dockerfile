@@ -1,0 +1,15 @@
+{
+  "Fastq2Ubam.fastq1": "oss://<bucketname>/cromwell_dir/NIST7035_TAAGGCGA_L001_R1_001.fastq.gz",
+  "Fastq2Ubam.fastq2": "oss://<bucketname>/cromwell_dir/NIST7035_TAAGGCGA_L001_R2_001.fastq.gz",
+  "Fastq2Ubam.out_prefix": "fastq2bam_test",
+  "Fastq2Ubam.split_to_n_files": 3,
+  "Fastq2Ubam.sample_name": "NIST7035",
+  "Fastq2Ubam.library_name": "library-name",
+  "Fastq2Ubam.platform": "illumina",
+  "Fastq2Ubam.platform_unit": "platform-unit",
+  "Fastq2Ubam.sequencing_center": "SC",
+  "Fastq2Ubam.read_group_name": "read-group",
+  "Fastq2Ubam.cluster_config": "OnDemand ecs.c5.4xlarge img-ubuntu-vpc",
+  "Fastq2Ubam.data_disk_size": 0,
+  "Fastq2Ubam.mem_gb": 32
+}
