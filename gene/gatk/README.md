@@ -23,8 +23,19 @@ sudo docker pull registry.docker-cn.com/broadinstitute/gatk:latest
 sudo docker pull registry.docker-cn.com/library/python:2.7
 sudo docker pull registry.docker-cn.com/broadinstitute/genomes-in-the-cloud:2.3.1-1512499786
 
+docker start 154e0c1fe225
+docker exec -it 154e0c1fe225 bash
+gatk --java-options "-Xmx8G" HaplotypeCaller -R reference.fasta -I input.bam -O output.vcf
+
 sudo docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 sudo docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
+```
+
+```
+https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-with-GATK4
+https://app.terra.bio/#library/showcase
+https://app.terra.bio/#workspaces/tidal-waves/Peat-Demo
+https://gatk.broadinstitute.org/hc/en-us/articles/360035889771-Pipelining-GATK-with-WDL-and-Cromwell
 ```
 
 ```
