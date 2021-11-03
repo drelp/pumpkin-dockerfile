@@ -10,6 +10,7 @@ sudo /usr/sbin/alternatives --config java
 /usr/sbin/alternatives --install /usr/bin/java java /usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.el7_9.x86_64/bin/java 2
 
 java -jar cromwell-70.jar server
+https://bp.aliyun.com/detail/67
 ```
 
 ```
