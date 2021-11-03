@@ -26,6 +26,7 @@ sudo docker pull registry.docker-cn.com/broadinstitute/genomes-in-the-cloud:2.3.
 docker start 154e0c1fe225
 docker exec -it 154e0c1fe225 bash
 gatk --java-options "-Xmx8G" HaplotypeCaller -R reference.fasta -I input.bam -O output.vcf
+gatk ValidateSamFile  -I input.bam -MODE SUMMARY
 
 sudo docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 sudo docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
