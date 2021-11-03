@@ -28,6 +28,8 @@ docker exec -it 154e0c1fe225 bash
 gatk --java-options "-Xmx8G" HaplotypeCaller -R reference.fasta -I input.bam -O output.vcf
 gatk ValidateSamFile  -I input.bam -MODE SUMMARY
 
+./gatk PrintReads -I gatk-master/src/test/resources/NA12878.chr17_69k_70k.dictFix.bam -O output.bam
+
 sudo docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 sudo docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
 ```
@@ -38,6 +40,9 @@ https://app.terra.bio/#library/showcase
 https://app.terra.bio/#workspaces/tidal-waves/Peat-Demo
 https://gatk.broadinstitute.org/hc/en-us/articles/360035889771-Pipelining-GATK-with-WDL-and-Cromwell
 https://gatk.broadinstitute.org/hc/en-us/articles/360035535912
+
+input.bam
+https://www.jianshu.com/p/a10876c7fd81
 ```
 
 ```
