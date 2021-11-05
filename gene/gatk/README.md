@@ -40,7 +40,7 @@ mkdir /model
 ./gatk PrintReads -I /code/gatk-master/src/test/resources/NA12878.chr17_69k_70k.dictFix.bam -O /model/output.bam
 
 task
-./gatk PrintReads -I /code/gatk-master/src/test/resources/NA12878.chr17_69k_70k.dictFix.bam -O /model/output.bam
+/gatk/gatk PrintReads -I /code/gatk-master/src/test/resources/NA12878.chr17_69k_70k.dictFix.bam -O /model/output.bam
 
 sudo docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 sudo docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
