@@ -4,3 +4,6 @@
 2021-11-02
 1. add notebook dockerfile
 2. add gatk notebook dockerfile
+
+2021-11-05
+1. add gatk dockerfile
