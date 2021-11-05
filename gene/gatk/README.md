@@ -47,6 +47,8 @@ ping 172.10.173.30
 
 sudo docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 sudo docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
+
+volcano
 ```
 
 ```
