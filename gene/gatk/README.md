@@ -43,7 +43,7 @@ task
 /gatk/gatk PrintReads -I /code/gatk-master/src/test/resources/NA12878.chr17_69k_70k.dictFix.bam -O /model/output.bam
 ping 172.10.173.30
 
-/gatk/gatk PrintReads -I /code/gatk-master/src/test/resources/NA12878.chr17_69k_70k.dictFix.bam -O /model/output.bam >> /var/log/gatk.log
+/gatk/gatk PrintReads -I /code/gatk-master/src/test/resources/NA12878.chr17_69k_70k.dictFix.bam -O /model/output.bam 2>&1 | tee /var/log/gatk.log
 
 sudo docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 sudo docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
