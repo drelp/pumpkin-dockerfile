@@ -3,6 +3,10 @@ sudo docker build -t pumpkin-gatk-test:1.0 -f ./Dockerfile .
 ```
 
 ```
+https://gatk.broadinstitute.org/hc/en-us/articles/360035531892
+```
+
+```
 /data/root/nfs_root/data/logger
 ```
 
