@@ -12,6 +12,15 @@ docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
 ```
 
+```shell script
+docker commit d5944567401a mssql-2019-with-cimb:1.0
+docker save -o mssql-2019-with-cimb.tar mssql-2019-with-cimb
+docker load --input mssql-2019-with-cimb.tar
+docker run --name mssql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=xxxx' \
+     -p 1433:1433  \
+     -d mssql-2019-with-cimb
+```
+
 ```
 允许 jupyter 监听所有端口
 
