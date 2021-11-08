@@ -22,10 +22,19 @@ useradd gene
 mkdir /home/gene
 apt-get install sudo
 sudo apt-get install python-setuptools
-# sudo apt-get install python3-setuptools
 pip install --upgrade pip
+python setup.py install
 
-python setup.py install 
+docker pull python:3.7
+docker run -it python:3.7 bash
+apt-get update
+apt-get install vim
+useradd gene
+mkdir /home/gene
+apt-get install sudo
+sudo apt-get install python3-setuptools
+pip install --upgrade pip
+python setup.py install
 ```
 
 ```
