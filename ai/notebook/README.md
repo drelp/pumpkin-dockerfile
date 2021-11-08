@@ -40,6 +40,8 @@ pip uninstall pyparsing
 pip install pyparsing==2.0.3
 pip install pyparsing==2.2.1
 matplotlib 3.5.0rc1 requires pyparsing>=2.2.1, but you have pyparsing 2.0.3 which is incompatible.
+
+docker start 9db9d522ab52
 ```
 
 ```
