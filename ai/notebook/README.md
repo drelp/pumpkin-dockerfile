@@ -44,6 +44,9 @@ matplotlib 3.5.0rc1 requires pyparsing>=2.2.1, but you have pyparsing 2.0.3 whic
 docker start 9db9d522ab52
 docker commit 9db9d522ab52 yiluxiangbei/python:3.7-ribotish
 sudo docker push yiluxiangbei/python:3.7-ribotish
+
+sudo docker tag yiluxiangbei/python:3.7-ribotish registry.cn-beijing.aliyuncs.com/luomor/python:3.7-ribotish
+sudo docker push registry.cn-beijing.aliyuncs.com/luomor/python:3.7-ribotish
 ```
 
 ```
