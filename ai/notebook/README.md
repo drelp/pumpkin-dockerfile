@@ -36,6 +36,10 @@ apt-get install sudo
 sudo apt-get install python3-setuptools
 pip install --upgrade pip
 python setup.py install
+pip uninstall pyparsing
+pip install pyparsing==2.0.3
+pip install pyparsing==2.2.1
+matplotlib 3.5.0rc1 requires pyparsing>=2.2.1, but you have pyparsing 2.0.3 which is incompatible.
 ```
 
 ```
