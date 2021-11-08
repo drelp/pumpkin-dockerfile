@@ -12,6 +12,13 @@ docker build -f /home/jupyter-dockerfile -t detectron2-base-notebook:v1.0 .
 docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
 ```
 
+```shell script
+docker pull python:2.7
+docker run -it python:2.7 bash
+apt-get update
+apt-get install vim
+```
+
 ```
 允许 jupyter 监听所有端口
 
