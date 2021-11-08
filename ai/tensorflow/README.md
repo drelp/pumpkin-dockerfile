@@ -21,6 +21,9 @@ docker history docker.io/mysql:5.7
 docker history --no-trunc docker.io/mysql:5.7
 
 docker exec -it <CONTAINER ID> jupyter notebook list
+
+sudo docker tag jupyter/tensorflow-notebook registry.cn-beijing.aliyuncs.com/luomor/jupyter-tensorflow-notebook:20211108
+sudo docker push registry.cn-beijing.aliyuncs.com/luomor/jupyter-tensorflow-notebook:20211108
 ```
 
 ```
