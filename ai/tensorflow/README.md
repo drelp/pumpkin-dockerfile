@@ -14,6 +14,9 @@ docker run -d -p 8888:8888 jupyter/tensorflow-notebook
 docker run jupyter/tensorflow-notebook
 
 docker inspect jupyter/tensorflow-notebook
+docker inspect -f {{".Size"}} docker.io/mysql:5.7
+docker history docker.io/mysql:5.7
+docker history --no-trunc docker.io/mysql:5.7
 
 docker exec -it <CONTAINER ID> jupyter notebook list
 ```
