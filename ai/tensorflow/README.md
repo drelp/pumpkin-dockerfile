@@ -5,7 +5,7 @@ tensorflow/tensorflow
 jupyter/tensorflow-notebook
 ```
 
-```
+```shell script
 docker pull jupyter/tensorflow-notebook
 docker run -d -p 8888:8888 jupyter/tensorflow-notebook
 docker run jupyter/tensorflow-notebook
