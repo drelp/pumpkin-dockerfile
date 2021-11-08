@@ -86,6 +86,9 @@ sudo docker push yiluxiangbei/python:3.7-ribotish
 
 sudo docker tag yiluxiangbei/python:3.7-ribotish registry.cn-beijing.aliyuncs.com/luomor/python:3.7-ribotish
 sudo docker push registry.cn-beijing.aliyuncs.com/luomor/python:3.7-ribotish
+
+
+sudo docker build -t pumpkin-ribotish-notebook:1.0 -f ./Dockerfile.1 .
 ```
 
 ```
