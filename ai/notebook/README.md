@@ -31,6 +31,7 @@ apt-get update
 apt-get install vim
 useradd gene
 mkdir /home/gene
+cd /home/gene/
 apt-get install sudo
 sudo apt-get install python3-setuptools
 pip install --upgrade pip
