@@ -84,6 +84,9 @@ ribotish quality -b /dataset/data/bam/clippingReadsTest.withRG.hg19.bam -g /data
 ribotish quality -b /dataset/data/bam/clippingReadsTest.withRG.hg19.bam -g /dataset/data/hg19/gencode.v19.regressionTestVariantSet.gtf -t -o clippingReadsTest.withRG.hg19_qual.txt
 ribotish predict -t /dataset/data/bam/clippingReadsTest.withRG.hg19.bam -g /dataset/data/hg19/gencode.v19.regressionTestVariantSet.gtf -f /dataset/data/hg19/gencode.v19.regressionTestVariantSet.pc_transcripts.fa -o pred.txt
 
+ribotish quality -b /dataset/data/bam/clippingReadsTest.withRG.hg19.bam -g /dataset/data/hg19/gencode.v19.regressionTestVariantSet.gtf -o /model/clippingReadsTest.withRG.hg19_qual.txt > /model/test.txt
+echo 'ok'
+
 docker start 9db9d522ab52
 docker commit 9db9d522ab52 yiluxiangbei/python:3.7-ribotish
 sudo docker push yiluxiangbei/python:3.7-ribotish
