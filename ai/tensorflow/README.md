@@ -14,6 +14,8 @@ docker run -d -p 8888:8888 jupyter/tensorflow-notebook
 docker run jupyter/tensorflow-notebook
 
 docker inspect jupyter/tensorflow-notebook
+docker history jupyter/tensorflow-notebook
+
 docker inspect -f {{".Size"}} docker.io/mysql:5.7
 docker history docker.io/mysql:5.7
 docker history --no-trunc docker.io/mysql:5.7
@@ -184,4 +186,60 @@ docker inspect jupyter/tensorflow-notebook
         }
     }
 ]
+```
+
+```
+docker history jupyter/tensorflow-notebook
+IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
+75a460bb409e   6 hours ago   RUN /bin/bash -o pipefail -c mamba install -…   5.26GB    buildkit.dockerfile.v0
+<missing>      6 hours ago   SHELL [/bin/bash -o pipefail -c]                0B        buildkit.dockerfile.v0
+<missing>      6 hours ago   LABEL maintainer=Jupyter Project <jupyter@go…   0B        buildkit.dockerfile.v0
+<missing>      7 hours ago   WORKDIR /home/jovyan                            0B        buildkit.dockerfile.v0
+<missing>      7 hours ago   USER 1000                                       0B        buildkit.dockerfile.v0
+<missing>      7 hours ago   RUN /bin/bash -o pipefail -c MPLBACKEND=Agg …   86.2kB    buildkit.dockerfile.v0
+<missing>      7 hours ago   ENV XDG_CACHE_HOME=/home/jovyan/.cache/         0B        buildkit.dockerfile.v0
+<missing>      7 hours ago   RUN /bin/bash -o pipefail -c git clone https…   2.31MB    buildkit.dockerfile.v0
+<missing>      7 hours ago   WORKDIR /tmp                                    0B        buildkit.dockerfile.v0
+<missing>      7 hours ago   RUN /bin/bash -o pipefail -c mamba install -…   854MB     buildkit.dockerfile.v0
+<missing>      7 hours ago   USER 1000                                       0B        buildkit.dockerfile.v0
+<missing>      7 hours ago   RUN /bin/bash -o pipefail -c apt-get update …   359MB     buildkit.dockerfile.v0
+<missing>      7 hours ago   USER root                                       0B        buildkit.dockerfile.v0
+<missing>      7 hours ago   LABEL maintainer=Jupyter Project <jupyter@go…   0B        buildkit.dockerfile.v0
+<missing>      3 days ago    USER 1000                                       0B        buildkit.dockerfile.v0
+<missing>      3 days ago    RUN /bin/bash -o pipefail -c update-alternat…   9.99kB    buildkit.dockerfile.v0
+<missing>      3 days ago    RUN /bin/bash -o pipefail -c apt-get update …   697MB     buildkit.dockerfile.v0
+<missing>      3 days ago    USER root                                       0B        buildkit.dockerfile.v0
+<missing>      3 days ago    LABEL maintainer=Jupyter Project <jupyter@go…   0B        buildkit.dockerfile.v0
+<missing>      3 days ago    WORKDIR /home/jovyan                            0B        buildkit.dockerfile.v0
+<missing>      3 days ago    USER 1000                                       0B        buildkit.dockerfile.v0
+<missing>      3 days ago    RUN |5 NB_USER=jovyan NB_UID=1000 NB_GID=100…   3.66kB    buildkit.dockerfile.v0
+<missing>      3 days ago    USER root                                       0B        buildkit.dockerfile.v0
+<missing>      3 days ago    COPY jupyter_notebook_config.py /etc/jupyter…   1.84kB    buildkit.dockerfile.v0
+<missing>      3 days ago    COPY start.sh start-notebook.sh start-single…   8.1kB     buildkit.dockerfile.v0
+<missing>      3 days ago    CMD ["start-notebook.sh"]                       0B        buildkit.dockerfile.v0
+<missing>      3 days ago    ENTRYPOINT ["tini" "-g" "--"]                   0B        buildkit.dockerfile.v0
+<missing>      3 days ago    EXPOSE map[8888/tcp:{}]                         0B        buildkit.dockerfile.v0
+<missing>      3 days ago    RUN |5 NB_USER=jovyan NB_UID=1000 NB_GID=100…   325MB     buildkit.dockerfile.v0
+<missing>      3 days ago    RUN |5 NB_USER=jovyan NB_UID=1000 NB_GID=100…   247MB     buildkit.dockerfile.v0
+<missing>      3 days ago    ARG CONDA_MIRROR=https://github.com/conda-fo…   0B        buildkit.dockerfile.v0
+<missing>      3 days ago    WORKDIR /tmp                                    0B        buildkit.dockerfile.v0
+<missing>      3 days ago    RUN |4 NB_USER=jovyan NB_UID=1000 NB_GID=100…   0B        buildkit.dockerfile.v0
+<missing>      3 days ago    ARG PYTHON_VERSION=default                      0B        buildkit.dockerfile.v0
+<missing>      3 days ago    USER 1000                                       0B        buildkit.dockerfile.v0
+<missing>      3 days ago    RUN |3 NB_USER=jovyan NB_UID=1000 NB_GID=100…   11.6kB    buildkit.dockerfile.v0
+<missing>      3 days ago    RUN |3 NB_USER=jovyan NB_UID=1000 NB_GID=100…   3.82kB    buildkit.dockerfile.v0
+<missing>      3 days ago    RUN |3 NB_USER=jovyan NB_UID=1000 NB_GID=100…   0B        buildkit.dockerfile.v0
+<missing>      3 days ago    COPY fix-permissions /usr/local/bin/fix-perm…   1.03kB    buildkit.dockerfile.v0
+<missing>      3 days ago    ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr…   0B        buildkit.dockerfile.v0
+<missing>      3 days ago    ENV CONDA_DIR=/opt/conda SHELL=/bin/bash NB_…   0B        buildkit.dockerfile.v0
+<missing>      3 days ago    RUN |3 NB_USER=jovyan NB_UID=1000 NB_GID=100…   30.8MB    buildkit.dockerfile.v0
+<missing>      3 days ago    ENV DEBIAN_FRONTEND=noninteractive              0B        buildkit.dockerfile.v0
+<missing>      3 days ago    USER root                                       0B        buildkit.dockerfile.v0
+<missing>      3 days ago    SHELL [/bin/bash -o pipefail -c]                0B        buildkit.dockerfile.v0
+<missing>      3 days ago    ARG NB_GID=100                                  0B        buildkit.dockerfile.v0
+<missing>      3 days ago    ARG NB_UID=1000                                 0B        buildkit.dockerfile.v0
+<missing>      3 days ago    ARG NB_USER=jovyan                              0B        buildkit.dockerfile.v0
+<missing>      3 days ago    LABEL maintainer=Jupyter Project <jupyter@go…   0B        buildkit.dockerfile.v0
+<missing>      3 weeks ago   /bin/sh -c #(nop)  CMD ["bash"]                 0B
+<missing>      3 weeks ago   /bin/sh -c #(nop) ADD file:5d68d27cc15a80653…   72.8MB
 ```
