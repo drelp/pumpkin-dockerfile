@@ -18,6 +18,8 @@ docker pull python:2.7
 docker run -it python:2.7 bash
 apt-get update
 apt-get install vim
+useradd gene
+mkdir /home/gene
 ```
 
 ```
