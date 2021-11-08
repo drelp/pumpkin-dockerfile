@@ -13,6 +13,7 @@ docker save -o detectron2-base-notebook.zip detectron2-base-notebook:v1.0
 ```
 
 ```shell script
+# ubuntu
 docker pull python:2.7
 docker run -it python:2.7 bash
 apt-get update
