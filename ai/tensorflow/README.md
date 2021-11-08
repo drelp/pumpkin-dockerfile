@@ -3,6 +3,9 @@ docker search tensorflow
 
 tensorflow/tensorflow
 jupyter/tensorflow-notebook
+
+docker pull tensorflow/tensorflow
+docker pull jupyter/tensorflow-notebook
 ```
 
 ```shell script
