@@ -28,6 +28,9 @@ sudo docker push registry.cn-beijing.aliyuncs.com/luomor/jupyter-tensorflow-note
 
 ```shell script
 docker pull tensorflow/tensorflow
+
+sudo docker tag tensorflow/tensorflow registry.cn-beijing.aliyuncs.com/luomor/tensorflow-tensorflow:20211109
+sudo docker push registry.cn-beijing.aliyuncs.com/luomor/tensorflow-tensorflow:20211109
 ```
 
 ```
