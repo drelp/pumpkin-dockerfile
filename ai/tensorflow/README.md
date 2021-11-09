@@ -6,6 +6,8 @@ jupyter/tensorflow-notebook
 
 docker pull tensorflow/tensorflow
 docker pull jupyter/tensorflow-notebook
+
+sudo docker build -t pumpkin-tensorflow-notebook:1.0 -f ./Dockerfile .
 ```
 
 ```shell script
