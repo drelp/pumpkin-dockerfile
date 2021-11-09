@@ -26,6 +26,10 @@ sudo docker tag jupyter/tensorflow-notebook registry.cn-beijing.aliyuncs.com/luo
 sudo docker push registry.cn-beijing.aliyuncs.com/luomor/jupyter-tensorflow-notebook:20211108
 ```
 
+```shell script
+docker pull tensorflow/tensorflow
+```
+
 ```
 Docker images国内镜像
 镜像地址
