@@ -23,6 +23,9 @@ sudo docker tag pumpkin-tensorflow-notebook:1.0 registry.cn-beijing.aliyuncs.com
 sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-tensorflow-notebook:1.0
 
 ls /usr/local/lib/python3.8/dist-packages/tensorflow/
+
+docker pull tensorflow/tensorflow:latest-jupyter
+docker run -it -p 8888:8888 tensorflow/tensorflow:latest-jupyter
 ```
 
 ```shell script
