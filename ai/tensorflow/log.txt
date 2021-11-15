@@ -42,3 +42,5 @@ docker run -it -p 8888:8888 tensorflow/tensorflow:latest-jupyter
      Or copy and paste one of these URLs:
          http://f5cc4c90177f:8888/?token=6b36f834f22155d4a9daa25ce69fd25d6a19d1210e646603
       or http://127.0.0.1:8888/?token=6b36f834f22155d4a9daa25ce69fd25d6a19d1210e646603
+
+https://github.com/tensorflow/models
