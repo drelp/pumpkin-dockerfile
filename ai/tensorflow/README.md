@@ -10,6 +10,12 @@ docker pull jupyter/tensorflow-notebook
 sudo docker build -t pumpkin-tensorflow:1.0 -f ./Dockerfile .
 sudo docker build -t pumpkin-tensorflow-notebook:1.0 -f ./Dockerfile.lab .
 
+sudo docker tag pumpkin-tensorflow:1.0 yiluxiangbei/pumpkin-tensorflow:1.0
+sudo docker push yiluxiangbei/pumpkin-tensorflow:1.0
+
+sudo docker tag pumpkin-tensorflow:1.0 registry.cn-beijing.aliyuncs.com/luomor/pumpkin-tensorflow:1.0
+sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-tensorflow:1.0
+
 sudo docker tag pumpkin-tensorflow-notebook:1.0 yiluxiangbei/pumpkin-tensorflow-notebook:1.0
 sudo docker push yiluxiangbei/pumpkin-tensorflow-notebook:1.0
 
@@ -33,7 +39,6 @@ docker exec -it <CONTAINER ID> jupyter notebook list
 
 sudo docker tag jupyter/tensorflow-notebook registry.cn-beijing.aliyuncs.com/luomor/jupyter-tensorflow-notebook:20211108
 sudo docker push registry.cn-beijing.aliyuncs.com/luomor/jupyter-tensorflow-notebook:20211108
-
 
 docker inspect tensorflow/tensorflow
 docker history tensorflow/tensorflow
