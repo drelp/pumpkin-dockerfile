@@ -47,6 +47,16 @@ sudo docker push registry.cn-beijing.aliyuncs.com/luomor/jupyter-tensorflow-note
 
 docker inspect tensorflow/tensorflow
 docker history tensorflow/tensorflow
+
+tensorflow/tensorflow:latest-jupyter
+
+docker commit f5cc4c90177f pumpkin-tensorflow:latest-jupyter
+
+sudo docker tag pumpkin-tensorflow:latest-jupyter yiluxiangbei/pumpkin-tensorflow:latest-jupyter
+sudo docker push yiluxiangbei/pumpkin-tensorflow:latest-jupyter
+
+sudo docker tag pumpkin-tensorflow:latest-jupyter registry.cn-beijing.aliyuncs.com/luomor/pumpkin-tensorflow:latest-jupyter
+sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-tensorflow:latest-jupyter
 ```
 
 ```shell script
