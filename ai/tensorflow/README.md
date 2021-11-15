@@ -21,6 +21,8 @@ sudo docker push yiluxiangbei/pumpkin-tensorflow-notebook:1.0
 
 sudo docker tag pumpkin-tensorflow-notebook:1.0 registry.cn-beijing.aliyuncs.com/luomor/pumpkin-tensorflow-notebook:1.0
 sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-tensorflow-notebook:1.0
+
+ls /usr/local/lib/python3.8/dist-packages/tensorflow/
 ```
 
 ```shell script
