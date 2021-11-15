@@ -32,6 +32,10 @@ docker exec -it <CONTAINER ID> jupyter notebook list
 
 sudo docker tag jupyter/tensorflow-notebook registry.cn-beijing.aliyuncs.com/luomor/jupyter-tensorflow-notebook:20211108
 sudo docker push registry.cn-beijing.aliyuncs.com/luomor/jupyter-tensorflow-notebook:20211108
+
+
+docker inspect tensorflow/tensorflow
+docker history tensorflow/tensorflow
 ```
 
 ```shell script
