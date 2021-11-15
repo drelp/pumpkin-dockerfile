@@ -1,1 +1,44 @@
 No module named 'tensorflow.examples'
+
+docker run -it -p 8888:8888 tensorflow/tensorflow:latest-jupyter
+ Unable to find image 'tensorflow/tensorflow:latest-jupyter' locally
+ latest-jupyter: Pulling from tensorflow/tensorflow
+ 7b1a6ab2e44d: Already exists
+ 6eb5e45aaf9d: Already exists
+ 9335add4f299: Already exists
+ 1f3a87fb3e64: Already exists
+ 644fc2fd2b1c: Already exists
+ ddd71afe6025: Already exists
+ a255fabf8f22: Already exists
+ 1976c9637880: Already exists
+ 9a82b2535551: Pull complete
+ bb9c85eaee82: Pull complete
+ 3a1715c419be: Pull complete
+ ee86c9aecee2: Pull complete
+ eeb4c3f2b518: Pull complete
+ 2e1ca6067036: Pull complete
+ 5fb9b57e4929: Pull complete
+ a5844c7d4e97: Pull complete
+ ca2a4494bdb0: Pull complete
+ 1836358b6b8d: Pull complete
+ e68ce9f7f413: Pull complete
+ 9d5d92ce6a1c: Pull complete
+ c4a83d7c935e: Pull complete
+ b8f165c7dc8c: Pull complete
+ 4303d4b30534: Pull complete
+ Digest: sha256:912327e8ae33b75459cc0985702c5203f84a19134d5e4182e716af2790102e55
+ Status: Downloaded newer image for tensorflow/tensorflow:latest-jupyter
+ [I 04:28:13.934 NotebookApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
+ jupyter_http_over_ws extension initialized. Listening on /http_over_websocket
+ [I 04:28:14.288 NotebookApp] Serving notebooks from local directory: /tf
+ [I 04:28:14.288 NotebookApp] Jupyter Notebook 6.4.5 is running at:
+ [I 04:28:14.288 NotebookApp] http://f5cc4c90177f:8888/?token=6b36f834f22155d4a9daa25ce69fd25d6a19d1210e646603
+ [I 04:28:14.288 NotebookApp]  or http://127.0.0.1:8888/?token=6b36f834f22155d4a9daa25ce69fd25d6a19d1210e646603
+ [I 04:28:14.288 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+ [C 04:28:14.293 NotebookApp]
+
+     To access the notebook, open this file in a browser:
+         file:///root/.local/share/jupyter/runtime/nbserver-1-open.html
+     Or copy and paste one of these URLs:
+         http://f5cc4c90177f:8888/?token=6b36f834f22155d4a9daa25ce69fd25d6a19d1210e646603
+      or http://127.0.0.1:8888/?token=6b36f834f22155d4a9daa25ce69fd25d6a19d1210e646603
