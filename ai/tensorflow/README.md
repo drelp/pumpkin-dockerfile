@@ -7,7 +7,8 @@ jupyter/tensorflow-notebook
 docker pull tensorflow/tensorflow
 docker pull jupyter/tensorflow-notebook
 
-sudo docker build -t pumpkin-tensorflow-notebook:1.0 -f ./Dockerfile .
+sudo docker build -t pumpkin-tensorflow:1.0 -f ./Dockerfile .
+sudo docker build -t pumpkin-tensorflow-notebook:1.0 -f ./Dockerfile.lab .
 
 sudo docker tag pumpkin-tensorflow-notebook:1.0 yiluxiangbei/pumpkin-tensorflow-notebook:1.0
 sudo docker push yiluxiangbei/pumpkin-tensorflow-notebook:1.0

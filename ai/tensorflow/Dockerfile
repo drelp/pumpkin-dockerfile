@@ -1,2 +1,3 @@
 FROM tensorflow/tensorflow
-RUN pip install tensorflow.examples
+RUN apt-get update
+RUN apt-get install vim
