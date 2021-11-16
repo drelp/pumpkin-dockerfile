@@ -1,6 +1,8 @@
 ```shell script
 # pytorch/pytorch
 docker pull pytorch/pytorch
+
+docker run -it pytorch/pytorch bash
 ```
 
 ```
