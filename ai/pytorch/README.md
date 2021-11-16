@@ -5,6 +5,8 @@ docker pull pytorch/pytorch
 
 ```
 https://pytorch.org/
+
+https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
 ```
 
 ```

@@ -10,3 +10,6 @@
 
 2021-11-08
 1. add tensorflow dockerfile
+
+2021-11-16
+1. add pytorch dockerfile
