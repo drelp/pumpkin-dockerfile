@@ -1,5 +1,6 @@
 ```shell script
 docker pull paddlepaddle/paddle
+docker run -it paddlepaddle/paddle bash
 ```
 
 ```
