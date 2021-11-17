@@ -1,5 +1,6 @@
 ```shell script
 docker pull registry.baidubce.com/paddlepaddle/paddle:2.2.0
+docker run -it registry.baidubce.com/paddlepaddle/paddle:2.2.0 /bin/bash
 
 docker pull paddlepaddle/paddle
 docker run -it paddlepaddle/paddle bash
@@ -16,6 +17,8 @@ docker pull paddlepaddle/paddle:2.2.0-gpu-cuda10.2-cudnn7
 docker pull paddlepaddle/paddle:2.2.0-gpu-cuda11.2-cudnn8
 
 docker run --name paddle_docker -it -v $PWD:/paddle registry.baidubce.com/paddlepaddle/paddle:2.2.0 /bin/bash
+
+python -m pip install paddlepaddle==2.2.0 -i https://mirror.baidu.com/pypi/simple
 
 mkdir ./jupyter_docker
 chmod 777 ./jupyter_docker
