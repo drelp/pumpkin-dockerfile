@@ -1,6 +1,10 @@
 ```shell script
+docker pull registry.baidubce.com/paddlepaddle/paddle:2.2.0
+
 docker pull paddlepaddle/paddle
 docker run -it paddlepaddle/paddle bash
+
+docker run -p8881:8888 paddlepaddle/book
 ```
 
 ```
