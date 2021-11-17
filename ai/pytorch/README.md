@@ -1,8 +1,10 @@
 ```shell script
 # pytorch/pytorch
 docker pull pytorch/pytorch
-
 docker run -it pytorch/pytorch bash
+
+sudo docker build -t pumpkin-pytorch:1.0 -f ./Dockerfile .
+sudo docker build -t pumpkin-pytorch-notebook:1.0 -f ./Dockerfile.lab .
 ```
 
 ```

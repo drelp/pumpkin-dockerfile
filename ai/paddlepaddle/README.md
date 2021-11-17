@@ -2,6 +2,9 @@
 docker pull registry.baidubce.com/paddlepaddle/paddle:2.2.0
 docker run -it registry.baidubce.com/paddlepaddle/paddle:2.2.0 /bin/bash
 
+sudo docker build -t pumpkin-paddlepaddle:1.0 -f ./Dockerfile .
+sudo docker build -t pumpkin-paddlepaddle-notebook:1.0 -f ./Dockerfile.lab .
+
 docker pull paddlepaddle/paddle
 docker run -it paddlepaddle/paddle bash
 
