@@ -5,6 +5,18 @@ docker run -it pytorch/pytorch bash
 
 sudo docker build -t pumpkin-pytorch:1.0 -f ./Dockerfile .
 sudo docker build -t pumpkin-pytorch-notebook:1.0 -f ./Dockerfile.lab .
+
+sudo docker tag pumpkin-pytorch:1.0 yiluxiangbei/pumpkin-pytorch:1.0
+sudo docker push yiluxiangbei/pumpkin-pytorch:1.0
+
+sudo docker tag pumpkin-pytorch:1.0 registry.cn-beijing.aliyuncs.com/luomor/pumpkin-pytorch:1.0
+sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-pytorch:1.0
+
+sudo docker tag pumpkin-pytorch-notebook:1.0 yiluxiangbei/pumpkin-pytorch-notebook:1.0
+sudo docker push yiluxiangbei/pumpkin-pytorch-notebook:1.0
+
+sudo docker tag pumpkin-pytorch-notebook:1.0 registry.cn-beijing.aliyuncs.com/luomor/pumpkin-pytorch-notebook:1.0
+sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-pytorch-notebook:1.0
 ```
 
 ```
