@@ -16,6 +16,14 @@ docker pull paddlepaddle/paddle:2.2.0-gpu-cuda10.2-cudnn7
 docker pull paddlepaddle/paddle:2.2.0-gpu-cuda11.2-cudnn8
 
 docker run --name paddle_docker -it -v $PWD:/paddle registry.baidubce.com/paddlepaddle/paddle:2.2.0 /bin/bash
+
+mkdir ./jupyter_docker
+chmod 777 ./jupyter_docker
+cd ./jupyter_docker
+docker run -p 80:80 --rm --env USER_PASSWD="password you set" -v $PWD:/home/paddle registry.baidubce.com/paddlepaddle/paddle:2.2.0-jupyter
+
+# https://github.com/NVIDIA/nvidia-docker
+nvidia-docker run --name paddle_docker -it -v $PWD:/paddle registry.baidubce.com/paddlepaddle/paddle:2.2.0-gpu-cuda10.2-cudnn7 /bin/bash
 ```
 
 ```shell script
