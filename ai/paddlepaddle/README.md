@@ -1,3 +1,7 @@
+```shell script
+docker pull paddlepaddle/paddle
+```
+
 ```
 docker search paddlepaddle
 NAME                                     DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
