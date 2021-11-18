@@ -44,6 +44,7 @@ docker run -p 80:80 --rm --env USER_PASSWD="password you set" -v $PWD:/home/padd
 nvidia-docker run --name paddle_docker -it -v $PWD:/paddle registry.baidubce.com/paddlepaddle/paddle:2.2.0-gpu-cuda10.2-cudnn7 /bin/bash
 
 docker rmi $(docker images | grep "<none>" | awk "{print \$3}")
+docker rmi `docker images | grep none | awk '{print $3}'`
 ```
 
 ```shell script
