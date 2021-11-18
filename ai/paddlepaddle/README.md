@@ -5,9 +5,6 @@ docker run -it registry.baidubce.com/paddlepaddle/paddle:2.2.0 /bin/bash
 sudo docker build -t pumpkin-paddlepaddle:1.0 -f ./Dockerfile .
 sudo docker build -t pumpkin-paddlepaddle-notebook:1.0 -f ./Dockerfile.lab .
 
-sudo docker build -t pumpkin-paddlepaddle:1.0 -f ./Dockerfile .
-sudo docker build -t pumpkin-paddlepaddle-notebook:1.0 -f ./Dockerfile.lab .
-
 sudo docker tag pumpkin-paddlepaddle:1.0 yiluxiangbei/pumpkin-paddlepaddle:1.0
 sudo docker push yiluxiangbei/pumpkin-paddlepaddle:1.0
 
