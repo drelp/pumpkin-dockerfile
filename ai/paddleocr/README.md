@@ -15,6 +15,9 @@ sudo docker tag pumpkin-paddleocr-notebook:1.0 registry.cn-beijing.aliyuncs.com/
 sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-paddleocr-notebook:1.0
 
 python -m pip install "paddleocr>=2.0.1" -i https://mirror.baidu.com/pypi/simple
+
+paddleocr --image_dir /dataset/0002514084.jpg --use_angle_cls true --use_gpu false
+download https://paddleocr.bj.bcebos.com/PP-OCRv2/chinese/ch_PP-OCRv2_det_infer.tar to /root/.paddleocr/2.3.0.2/ocr/det/ch/ch_PP-OCRv2_det_infer/ch_PP-OCRv2_det_infer.tar
 ```
 
 ```shell script
