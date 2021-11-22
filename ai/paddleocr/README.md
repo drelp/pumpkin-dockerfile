@@ -30,7 +30,10 @@ https://paddleocr.bj.bcebos.com/dygraph_v2.0/ch/ch_ppocr_server_v2.0_rec_infer.t
 ```
 
 ```shell script
-
+语种	缩写		语种	缩写		语种	缩写
+中文	ch		法文	fr		日文	japan
+英文	en		德文	german		韩文	korean
+繁体中文	chinese_cht		意大利文	it		俄罗斯文	ru
 ```
 
 ```
