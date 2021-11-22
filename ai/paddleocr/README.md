@@ -17,6 +17,11 @@ sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-paddleocr-noteb
 python -m pip install "paddleocr>=2.0.1" -i https://mirror.baidu.com/pypi/simple
 
 paddleocr --image_dir /dataset/0002514084.jpg --use_angle_cls true --use_gpu false
+
+https://paddleocr.bj.bcebos.com/dygraph_v2.0/ch/ch_ppocr_server_v2.0_det_infer.tar
+https://paddleocr.bj.bcebos.com/dygraph_v2.0/ch/ch_ppocr_mobile_v2.0_cls_infer.tar
+https://paddleocr.bj.bcebos.com/dygraph_v2.0/ch/ch_ppocr_server_v2.0_rec_infer.tar
+
 download https://paddleocr.bj.bcebos.com/PP-OCRv2/chinese/ch_PP-OCRv2_det_infer.tar to /root/.paddleocr/2.3.0.2/ocr/det/ch/ch_PP-OCRv2_det_infer/ch_PP-OCRv2_det_infer.tar
 ```
 
