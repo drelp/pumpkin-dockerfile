@@ -60,3 +60,121 @@ paddleocr/models                                                                
 paddleocr/paddle-tutorial                                                             0
 nguyenthuan/paddleocr.org                                                             0
 ```
+
+```
+paddleocr -h
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+usage: paddleocr [-h] [--use_gpu USE_GPU] [--ir_optim IR_OPTIM] [--use_tensorrt USE_TENSORRT]
+                 [--min_subgraph_size MIN_SUBGRAPH_SIZE] [--precision PRECISION] [--gpu_mem GPU_MEM]
+                 [--image_dir IMAGE_DIR] [--det_algorithm DET_ALGORITHM] [--det_model_dir DET_MODEL_DIR]
+                 [--det_limit_side_len DET_LIMIT_SIDE_LEN] [--det_limit_type DET_LIMIT_TYPE]
+                 [--det_db_thresh DET_DB_THRESH] [--det_db_box_thresh DET_DB_BOX_THRESH]
+                 [--det_db_unclip_ratio DET_DB_UNCLIP_RATIO] [--max_batch_size MAX_BATCH_SIZE]
+                 [--use_dilation USE_DILATION] [--det_db_score_mode DET_DB_SCORE_MODE]
+                 [--det_east_score_thresh DET_EAST_SCORE_THRESH] [--det_east_cover_thresh DET_EAST_COVER_THRESH]
+                 [--det_east_nms_thresh DET_EAST_NMS_THRESH] [--det_sast_score_thresh DET_SAST_SCORE_THRESH]
+                 [--det_sast_nms_thresh DET_SAST_NMS_THRESH] [--det_sast_polygon DET_SAST_POLYGON]
+                 [--det_pse_thresh DET_PSE_THRESH] [--det_pse_box_thresh DET_PSE_BOX_THRESH]
+                 [--det_pse_min_area DET_PSE_MIN_AREA] [--det_pse_box_type DET_PSE_BOX_TYPE]
+                 [--det_pse_scale DET_PSE_SCALE] [--rec_algorithm REC_ALGORITHM] [--rec_model_dir REC_MODEL_DIR]
+                 [--rec_image_shape REC_IMAGE_SHAPE] [--rec_batch_num REC_BATCH_NUM]
+                 [--max_text_length MAX_TEXT_LENGTH] [--rec_char_dict_path REC_CHAR_DICT_PATH]
+                 [--use_space_char USE_SPACE_CHAR] [--vis_font_path VIS_FONT_PATH] [--drop_score DROP_SCORE]
+                 [--e2e_algorithm E2E_ALGORITHM] [--e2e_model_dir E2E_MODEL_DIR]
+                 [--e2e_limit_side_len E2E_LIMIT_SIDE_LEN] [--e2e_limit_type E2E_LIMIT_TYPE]
+                 [--e2e_pgnet_score_thresh E2E_PGNET_SCORE_THRESH] [--e2e_char_dict_path E2E_CHAR_DICT_PATH]
+                 [--e2e_pgnet_valid_set E2E_PGNET_VALID_SET] [--e2e_pgnet_polygon E2E_PGNET_POLYGON]
+                 [--e2e_pgnet_mode E2E_PGNET_MODE] [--use_angle_cls USE_ANGLE_CLS] [--cls_model_dir CLS_MODEL_DIR]
+                 [--cls_image_shape CLS_IMAGE_SHAPE] [--label_list LABEL_LIST] [--cls_batch_num CLS_BATCH_NUM]
+                 [--cls_thresh CLS_THRESH] [--enable_mkldnn ENABLE_MKLDNN] [--cpu_threads CPU_THREADS]
+                 [--use_pdserving USE_PDSERVING] [--warmup WARMUP] [--use_mp USE_MP]
+                 [--total_process_num TOTAL_PROCESS_NUM] [--process_id PROCESS_ID] [--benchmark BENCHMARK]
+                 [--save_log_path SAVE_LOG_PATH] [--show_log SHOW_LOG] [--use_onnx USE_ONNX] [--output OUTPUT]
+                 [--table_max_len TABLE_MAX_LEN] [--table_model_dir TABLE_MODEL_DIR]
+                 [--table_char_type TABLE_CHAR_TYPE] [--table_char_dict_path TABLE_CHAR_DICT_PATH]
+                 [--layout_path_model LAYOUT_PATH_MODEL] [--lang LANG] [--det DET] [--rec REC] [--type TYPE]
+                 [--ocr_version OCR_VERSION] [--structure_version STRUCTURE_VERSION]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --use_gpu USE_GPU
+  --ir_optim IR_OPTIM
+  --use_tensorrt USE_TENSORRT
+  --min_subgraph_size MIN_SUBGRAPH_SIZE
+  --precision PRECISION
+  --gpu_mem GPU_MEM
+  --image_dir IMAGE_DIR
+  --det_algorithm DET_ALGORITHM
+  --det_model_dir DET_MODEL_DIR
+  --det_limit_side_len DET_LIMIT_SIDE_LEN
+  --det_limit_type DET_LIMIT_TYPE
+  --det_db_thresh DET_DB_THRESH
+  --det_db_box_thresh DET_DB_BOX_THRESH
+  --det_db_unclip_ratio DET_DB_UNCLIP_RATIO
+  --max_batch_size MAX_BATCH_SIZE
+  --use_dilation USE_DILATION
+  --det_db_score_mode DET_DB_SCORE_MODE
+  --det_east_score_thresh DET_EAST_SCORE_THRESH
+  --det_east_cover_thresh DET_EAST_COVER_THRESH
+  --det_east_nms_thresh DET_EAST_NMS_THRESH
+  --det_sast_score_thresh DET_SAST_SCORE_THRESH
+  --det_sast_nms_thresh DET_SAST_NMS_THRESH
+  --det_sast_polygon DET_SAST_POLYGON
+  --det_pse_thresh DET_PSE_THRESH
+  --det_pse_box_thresh DET_PSE_BOX_THRESH
+  --det_pse_min_area DET_PSE_MIN_AREA
+  --det_pse_box_type DET_PSE_BOX_TYPE
+  --det_pse_scale DET_PSE_SCALE
+  --rec_algorithm REC_ALGORITHM
+  --rec_model_dir REC_MODEL_DIR
+  --rec_image_shape REC_IMAGE_SHAPE
+  --rec_batch_num REC_BATCH_NUM
+  --max_text_length MAX_TEXT_LENGTH
+  --rec_char_dict_path REC_CHAR_DICT_PATH
+  --use_space_char USE_SPACE_CHAR
+  --vis_font_path VIS_FONT_PATH
+  --drop_score DROP_SCORE
+  --e2e_algorithm E2E_ALGORITHM
+  --e2e_model_dir E2E_MODEL_DIR
+  --e2e_limit_side_len E2E_LIMIT_SIDE_LEN
+  --e2e_limit_type E2E_LIMIT_TYPE
+  --e2e_pgnet_score_thresh E2E_PGNET_SCORE_THRESH
+  --e2e_char_dict_path E2E_CHAR_DICT_PATH
+  --e2e_pgnet_valid_set E2E_PGNET_VALID_SET
+  --e2e_pgnet_polygon E2E_PGNET_POLYGON
+  --e2e_pgnet_mode E2E_PGNET_MODE
+  --use_angle_cls USE_ANGLE_CLS
+  --cls_model_dir CLS_MODEL_DIR
+  --cls_image_shape CLS_IMAGE_SHAPE
+  --label_list LABEL_LIST
+  --cls_batch_num CLS_BATCH_NUM
+  --cls_thresh CLS_THRESH
+  --enable_mkldnn ENABLE_MKLDNN
+  --cpu_threads CPU_THREADS
+  --use_pdserving USE_PDSERVING
+  --warmup WARMUP
+  --use_mp USE_MP
+  --total_process_num TOTAL_PROCESS_NUM
+  --process_id PROCESS_ID
+  --benchmark BENCHMARK
+  --save_log_path SAVE_LOG_PATH
+  --show_log SHOW_LOG
+  --use_onnx USE_ONNX
+  --output OUTPUT
+  --table_max_len TABLE_MAX_LEN
+  --table_model_dir TABLE_MODEL_DIR
+  --table_char_type TABLE_CHAR_TYPE
+  --table_char_dict_path TABLE_CHAR_DICT_PATH
+  --layout_path_model LAYOUT_PATH_MODEL
+  --lang LANG
+  --det DET
+  --rec REC
+  --type TYPE
+  --ocr_version OCR_VERSION
+                        OCR Model version, the current model support list is as follows: 1. PP-OCRv2 Support Chinese
+                        detection and recognition model. 2. PP-OCR support Chinese detection, recognition and direction
+                        classifier and multilingual recognition model.
+  --structure_version STRUCTURE_VERSION
+                        Model version, the current model support list is as follows: 1. STRUCTURE Support en table
+                        structure model.
+```
