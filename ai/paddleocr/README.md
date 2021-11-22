@@ -19,6 +19,8 @@ python -m pip install "paddleocr>=2.0.1" -i https://mirror.baidu.com/pypi/simple
 paddleocr --image_dir /dataset/0002514084.jpg --use_angle_cls true --use_gpu false
 paddleocr --image_dir /dataset/0002514084.jpg --use_angle_cls true --use_gpu false --type=structure
 
+pip install -U https://paddleocr.bj.bcebos.com/whl/layoutparser-0.0.0-py3-none-any.whl
+
 # --rec_image_shape --cls_image_shape
 
 https://paddleocr.bj.bcebos.com/dygraph_v2.0/ch/ch_ppocr_server_v2.0_det_infer.tar
