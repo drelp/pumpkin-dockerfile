@@ -16,3 +16,6 @@
 
 2021-11-18
 1. add paddlepaddle dockerfile
+
+2021-11-22
+1. add paddleocr dockerfile
