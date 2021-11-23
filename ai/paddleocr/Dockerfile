@@ -1,5 +1,6 @@
 FROM yiluxiangbei/pumpkin-paddlepaddle:1.0
 RUN pip install "paddleocr>=2.0.1"
+RUN pip install -U https://paddleocr.bj.bcebos.com/whl/layoutparser-0.0.0-py3-none-any.whl
 RUN mkdir -p /root/.paddleocr/2.3.0.2/ocr/det/ch
 RUN mkdir -p /root/.paddleocr/2.3.0.2/ocr/rec/ch
 RUN mkdir -p /root/.paddleocr/2.3.0.2/ocr/cls

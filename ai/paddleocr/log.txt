@@ -253,3 +253,5 @@ Namespace(benchmark=False, cls_batch_num=6, cls_image_shape='3, 48, 192', cls_mo
 [2021/11/22 19:22:55] root INFO: [[[466.0, 765.0], [551.0, 765.0], [551.0, 779.0], [466.0, 779.0]], ('国网北京市电力公司', 0.9862636)]
 
 download https://paddle-model-ecology.bj.bcebos.com/model/layout-parser/ppyolov2_r50vd_dcn_365e_publaynet.tar to /root/.paddledet/inference_model/ppyolov2_r50vd_dcn_365e_publaynet/ppyolov2_r50vd_dcn_365e_publaynet_infer/ppyolov2_r50vd_dcn_365e_publaynet.tar
+
+download https://paddleocr.bj.bcebos.com/dygraph_v2.0/table/en_ppocr_mobile_v2.0_table_structure_infer.tar to /root/.paddleocr/2.3.0.2/ocr/table/en_ppocr_mobile_v2.0_table_structure_infer/en_ppocr_mobile_v2.0_table_structure_infer.tar
