@@ -21,7 +21,7 @@ RUN tar -xvf /root/.paddleocr/2.3.0.2/ocr/table/en_ppocr_mobile_v2.0_table_struc
 RUN tar -xvf /root/.paddledet/inference_model/ppyolov2_r50vd_dcn_365e_publaynet/ppyolov2_r50vd_dcn_365e_publaynet.tar -C /root/.paddledet/inference_model/ppyolov2_r50vd_dcn_365e_publaynet
 RUN mv /root/.paddledet/inference_model/ppyolov2_r50vd_dcn_365e_publaynet/ppyolov2_r50vd_dcn_365e_publaynet/* /root/.paddledet/inference_model/ppyolov2_r50vd_dcn_365e_publaynet/ppyolov2_r50vd_dcn_365e_publaynet_infer
 
-RUN mkdir /usr/share/fonts
+# RUN mkdir /usr/share/fonts/chinese
 COPY chinese /usr/share/fonts/
 COPY fonts.conf /etc/fonts/fonts.conf
 RUN ls /usr/share/fonts/
