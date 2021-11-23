@@ -24,4 +24,3 @@ RUN mv /root/.paddledet/inference_model/ppyolov2_r50vd_dcn_365e_publaynet/ppyolo
 RUN mkdir /usr/share/fonts/chinese
 COPY chinese /usr/share/fonts/chinese
 COPY fonts.conf /etc/fonts/fonts.conf
-RUN ls /usr/share/fonts/chinese
