@@ -2,7 +2,7 @@
 sudo docker build -t pumpkin-video:1.0 -f ./Dockerfile .
 sudo docker build -t pumpkin-video-notebook:1.0 -f ./Dockerfile.lab .
 
-sudo docker run -it -rm pumpkin-video:1.0 bash
+sudo docker run -it --rm pumpkin-video:1.0 bash
 
 sudo docker tag pumpkin-video:1.0 yiluxiangbei/pumpkin-video:1.0
 sudo docker push yiluxiangbei/pumpkin-video:1.0
