@@ -19,3 +19,6 @@
 
 2021-11-22
 1. add paddleocr dockerfile
+
+2021-12-06
+1. add video dockerfile

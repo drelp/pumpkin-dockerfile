@@ -18,6 +18,8 @@ sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-video-notebook:
 
 python track.py --source '/dataset/2447771_427e1d0294940aa26bb0037cab09e154_1.mp4' --save-vid
 python track.py --source 'k3008u2szwb.mp4' --save-vid
+
+docker rmi `docker images | grep none | awk '{print $3}'`
 ```
 
 ```
