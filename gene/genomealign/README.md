@@ -1,4 +1,6 @@
 ```shell script
+docker commit -a "Gene Pumpkin" -m "centos gene" 77d5c24a63c2 centos-gene:genomealign
+
 sudo docker tag centos-gene:genomealign yiluxiangbei/pumpkin-gene-genomealign:1.0
 sudo docker push yiluxiangbei/pumpkin-gene-genomealign:1.0
 
