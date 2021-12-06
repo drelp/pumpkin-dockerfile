@@ -1,0 +1,35 @@
+python track.py --source '/dataset/2447771_427e1d0294940aa26bb0037cab09e154_1.mp4' --save-vid
+
+Traceback (most recent call last):
+  File "/pytorch/track.py", line 12, in <module>
+    from yolov5.models.experimental import attempt_load
+  File "/pytorch/yolov5/models/experimental.py", line 11, in <module>
+    from models.common import Conv
+  File "/pytorch/./yolov5/models/common.py", line 13, in <module>
+    import cv2
+  File "/usr/local/lib/python3.9/site-packages/cv2/__init__.py", line 8, in <module>
+    from .cv2 import *
+ImportError: libGL.so.1: cannot open shared object file: No such file or directory
+
+
+python track.py --source '/dataset/2447771_427e1d0294940aa26bb0037cab09e154_1.mp4' --save-vid
+Downloading https://ultralytics.com/assets/Arial.ttf to /root/.config/Ultralytics/Arial.ttf...
+Loading weights from deep_sort_pytorch/deep_sort/deep/checkpoint/ckpt.t7... Done!
+YOLOv5 🚀 v6.0-94-g47fac9f torch 1.10.0+cu102 CPU
+
+YOLOv5 🚀 v6.0-94-g47fac9f torch 1.10.0+cu102 CPU
+
+Traceback (most recent call last):
+  File "/pytorch/track.py", line 242, in <module>
+    detect(opt)
+  File "/pytorch/track.py", line 63, in detect
+    model = DetectMultiBackend(opt.yolo_weights, device=device, dnn=opt.dnn)
+  File "/pytorch/yolov5/models/common.py", line 305, in __init__
+    model = torch.jit.load(w) if 'torchscript' in w else attempt_load(weights, map_location=device)
+  File "/pytorch/./yolov5/models/experimental.py", line 96, in attempt_load
+    ckpt = torch.load(attempt_download(w), map_location=map_location)  # load
+  File "/usr/local/lib/python3.9/site-packages/torch/serialization.py", line 608, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/usr/local/lib/python3.9/site-packages/torch/serialization.py", line 777, in _legacy_load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+_pickle.UnpicklingError: invalid load key, 'v'.
