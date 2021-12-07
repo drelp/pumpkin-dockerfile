@@ -218,3 +218,21 @@ ImportError: libgthread-2.0.so.0: cannot open shared object file: No such file o
 
 image has dependent child images
 image is referenced in multiple repositories
+
+docker rmi e2c1cc6af08f
+Error response from daemon: conflict: unable to delete e2c1cc6af08f (must be forced) - image is referenced in multiple repositories
+
+docker rmi 8384250cf0fb
+Error response from daemon: conflict: unable to delete 8384250cf0fb (cannot be forced) - image has dependent child images
+
+docker rmi e2c1cc6af08f 8384250cf0fb
+Error response from daemon: conflict: unable to delete e2c1cc6af08f (must be forced) - image is referenced in multiple repositories
+Error response from daemon: conflict: unable to delete 8384250cf0fb (cannot be forced) - image has dependent child images
+
+docker rmi -f e2c1cc6af08f
+
+docker rmi 8384250cf0fb
+Error response from daemon: conflict: unable to delete 8384250cf0fb (must be forced) - image is referenced in multiple repositories
+
+docker rmi -f 8384250cf0fb
+
