@@ -19,7 +19,9 @@ sudo docker push yiluxiangbei/pumpkin-video-notebook:1.0
 sudo docker tag pumpkin-video-notebook:1.0 registry.cn-beijing.aliyuncs.com/luomor/pumpkin-video-notebook:1.0
 sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-video-notebook:1.0
 
+cd /pytorch
 python track.py --source '/dataset/2447771_427e1d0294940aa26bb0037cab09e154_1.mp4' --save-vid
+cp -r inference/output /model
 python track.py --source 'k3008u2szwb.mp4' --save-vid
 
 docker rmi `docker images | grep none | awk '{print $3}'`
