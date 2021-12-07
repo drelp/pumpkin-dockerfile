@@ -33,5 +33,8 @@ pip install opencv-python
 
 pip uninstall opencv-python
 pip install opencv-python-headless
-pip install opencv-python-headless -i https://mirrors.aliyun.com/pypi/simple/
+pip install opencv-python-headless -i https://mirrors.aliyun.com/pypi/simple/
+
+Downloading https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5l.pt to yolov5l.pt...
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89.2M/89.2M [00:10<00:00, 9.04MB/s]
 ```
