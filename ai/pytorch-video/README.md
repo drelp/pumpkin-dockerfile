@@ -4,6 +4,7 @@ sudo docker build -t pumpkin-video-notebook:1.0 -f ./Dockerfile.lab .
 
 sudo docker build -t pumpkin-video-notebook:1.0 --no-cache -f ./Dockerfile.lab .
 
+sudo docker build -t pumpkin-video:1.0 -f ./Dockerfile1 .
 sudo docker run -it --rm pumpkin-video:1.0 bash
 
 sudo docker tag pumpkin-video:1.0 yiluxiangbei/pumpkin-video:1.0
