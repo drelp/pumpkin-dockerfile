@@ -140,3 +140,53 @@ Removing intermediate container bc29c3ae6614
  ---> c9807ebffda0
 Successfully built c9807ebffda0
 Successfully tagged pumpkin-video:1.0
+
+
+sudo docker build -t pumpkin-video:1.0 -f ./Dockerfile1 .
+Sending build context to Docker daemon  1.055GB
+Step 1/8 : FROM python:3.9
+ ---> 5d4091bbd98c
+Step 2/8 : WORKDIR /pytorch
+ ---> Using cache
+ ---> cff05246b9e9
+Step 3/8 : COPY . .
+ ---> f0cf6757fea4
+Step 4/8 : RUN python -m pip install --upgrade pip
+ ---> Running in c73665ee32e8
+Requirement already satisfied: pip in /usr/local/lib/python3.9/site-packages (21.2.4)
+Collecting pip
+  Downloading pip-21.3.1-py3-none-any.whl (1.7 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.2.4
+    Uninstalling pip-21.2.4:
+      Successfully uninstalled pip-21.2.4
+Successfully installed pip-21.3.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Removing intermediate container c73665ee32e8
+ ---> 2412db94fffc
+Step 5/8 : RUN pip install -qr requirements.txt -f https://download.pytorch.org/whl/cpu/torch_stable.html
+ ---> Running in dc953eccdea0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Removing intermediate container dc953eccdea0
+ ---> 221f9047ee87
+Step 6/8 : RUN pip install requests
+ ---> Running in 42e6d6de5744
+Requirement already satisfied: requests in /usr/local/lib/python3.9/site-packages (2.26.0)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.9/site-packages (from requests) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.9/site-packages (from requests) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.9/site-packages (from requests) (1.26.7)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.9/site-packages (from requests) (2.0.9)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Removing intermediate container 42e6d6de5744
+ ---> d8dddca24ac4
+Step 7/8 : RUN mkdir -p /root/.config/Ultralytics
+ ---> Running in 500050f38536
+Removing intermediate container 500050f38536
+ ---> 8360e8ea6502
+Step 8/8 : RUN cp Arial.ttf /root/.config/Ultralytics
+ ---> Running in 793820b52838
+Removing intermediate container 793820b52838
+ ---> a65bd80ee84c
+Successfully built a65bd80ee84c
+Successfully tagged pumpkin-video:1.0
