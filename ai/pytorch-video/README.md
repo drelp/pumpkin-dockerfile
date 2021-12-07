@@ -27,6 +27,10 @@ docker rmi `docker images | grep none | awk '{print $3}'`
 docker pull guruzoa/yolov5_deepsort
 
 docker image inspect --format='{{.RepoTags}} {{.Id}} {{.Parent}}' $(docker image ls -q --filter since=777e24c35831)
+
+docker images|grep pumpkin-paddleocr
+
+docker rmi -f `docker images | grep pumpkin-paddleocr | grep none | awk '{print $3}'`
 ```
 
 ```
