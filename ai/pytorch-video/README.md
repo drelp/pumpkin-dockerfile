@@ -23,6 +23,8 @@ python track.py --source '/dataset/2447771_427e1d0294940aa26bb0037cab09e154_1.mp
 python track.py --source 'k3008u2szwb.mp4' --save-vid
 
 docker rmi `docker images | grep none | awk '{print $3}'`
+
+docker pull guruzoa/yolov5_deepsort
 ```
 
 ```
