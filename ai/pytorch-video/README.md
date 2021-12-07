@@ -25,6 +25,8 @@ python track.py --source 'k3008u2szwb.mp4' --save-vid
 docker rmi `docker images | grep none | awk '{print $3}'`
 
 docker pull guruzoa/yolov5_deepsort
+
+docker image inspect --format='{{.RepoTags}} {{.Id}} {{.Parent}}' $(docker image ls -q --filter since=777e24c35831)
 ```
 
 ```
