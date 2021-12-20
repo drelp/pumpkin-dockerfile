@@ -15,3 +15,7 @@ sudo docker push yiluxiangbei/pumpkin-genomealign-notebook:1.0
 sudo docker tag pumpkin-genomealign-notebook:1.0 registry.cn-beijing.aliyuncs.com/luomor/pumpkin-genomealign-notebook:1.0
 sudo docker push registry.cn-beijing.aliyuncs.com/luomor/pumpkin-genomealign-notebook:1.0
 ```
+
+```
+zdap bam2bdg -i /dataset/ribo_star.bam -o /model/ribo_p
+```
